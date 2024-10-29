@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\Mario\\AppData\\Roaming/RenPy/TalesofMonkeyJiekx2-1729654547\\persistent'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\Mario\Desktop\Ren'py\renpy-8.3.2-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\Mario\Desktop\Ren'py\renpy-8.3.2-sdk\renpy\main.py", line 666, in main
+    renpy.persistent.update(True)
+  File "C:\Users\Mario\Desktop\Ren'py\renpy-8.3.2-sdk\renpy\persistent.py", line 434, in update
+    save()
+  File "C:\Users\Mario\Desktop\Ren'py\renpy-8.3.2-sdk\renpy\persistent.py", line 456, in save
+    renpy.loadsave.location.save_persistent(compressed)
+  File "C:\Users\Mario\Desktop\Ren'py\renpy-8.3.2-sdk\renpy\savelocation.py", line 622, in save_persistent
+    l.save_persistent(data)
+  File "C:\Users\Mario\Desktop\Ren'py\renpy-8.3.2-sdk\renpy\savelocation.py", line 433, in save_persistent
+    self.persistent_mtime = os.path.getmtime(fn)
+  File "lib/python3.9/genericpath.py", line 55, in getmtime
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\Mario\\AppData\\Roaming/RenPy/TalesofMonkeyJiekx2-1729654547\\persistent'
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.3.2.24090902
+Tales of MonkeyJiekx2 1.0
+Thu Oct 24 02:25:51 2024
+:51 2024
